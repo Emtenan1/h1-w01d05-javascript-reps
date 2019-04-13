@@ -30,15 +30,15 @@ c = a;
 ### Your solution here:
 1.  What is `a`?
 ```
-a is (your answer here)
+a is bongos
 ```
 2.  What is `b`?
 ```
-b is (your answer here)
+b is true
 ```
 3.  What is `c`?
 ```
-c is (your answer here)
+c is 1
 ```
 
 Now run it and don't update your answers above.  Any surprises?  Don't worry about submitting wrong answers, it's all good :3
@@ -60,8 +60,8 @@ Result should be:
 ```
 
 ```js
-// your answer here
-```
+var Name=['please','squeeze','the','chees']
+console.log(Name.join(' '));
 
 ## 3 - Variable Assignments
 
@@ -70,44 +70,46 @@ Output a console log `The sum of 5 and 10 is 15` where the values for 5 and 10 a
 ```js
 var num1 = 5;
 var num2 = 10;
+var num3= num1+num2
 ```
+
 
 Let's do this in parts:
 1. How can we make `num3` equal to the sum of `num1` and `num2`?
 ```js
-// your solution here
-```
+
+consol.log(num3);
 2. Use variables `num1`, `num2` and `num3` to fill in the `console.log()` to complete the sentence: 
 
 >The sum of 5 and 10 is 15
 
 ```js
-console.log(/* your answer here */)
+console.log("The sum of",num1,"and",num2, "is",num3)
 ```
 
 ## 4 - Comparisons
 By just looking at the following expressions, determine in your mind whether or not each will evaluate to true or false
 ```
-a) 999 > 999
+a) 999 > 999 
 b) 999 === 999 
-c) 999 !== 999
-d) -5 >= -4
-e) 100 <= -100
+c) 999 !== 999 
+d) -5 >= -4 
+e) 100 <= -100 
 f) 20 + 5 < 5 
-g) 81 / 9 === 9
-h) 9 !== 8 + 1
+g) 81 / 9 === 9 
+h) 9 !== 8 + 1 
 ```
 ### Your solution here:
 Write `true` or `false` based on the list above
 ```
-a) 
-b)  
-c)
-d) 
-e) 
-f) 
-g) 
-h) 
+a) False
+b) True
+c) False
+d) False
+e) False
+f) False
+g) True
+h) False
 ```
 
 ## 5 - Functions:
@@ -115,41 +117,48 @@ h)
 * Write a function called `timeTwo` that takes in a parameter `num` and `return`'s that number multiplied by 2.
 
 ```js
-// your solution here
-```
+function timeTwo(num){
+  return [num]/2
+}
+console.log(timeTwo(4));
 
 ## 6 - Loops:
 
 *  Write a `for` loop so that the function outputs all values between 0 and any number passed into the `maxNum` parameter.
    
 ```js
-// your answer here
-```
+
+var maxNum= 65;
+for(var i=0;i<maxNum;i++){
+  console.log(i)
+}
 
 ## 7 - Arrays:
 
 *  Create a variable `favoriteMovies` that is equal to an array of your 5 favorite movies:
 
 ```js
-// your answer here
-```
+var favoriteMovies=['Lion','The girl on the train','Split','Bird box','The notebook'];
 
 *  How would you replace the 3rd favorite movie with the value `Toy Story 3`?
 
 ```js
-// your answer here
-```
+favoriteMovies[2]='Toy Story 3'
+console.log(favoriteMovies);
 
 *   How would you remove the last movie from that array?
 ```js
-// your answer here
-```
+favoriteMovies.pop();
+console.log(favoriteMovies);
 
 *   **Write a function** called `addMovie` that takes a parameter of `newMovie` that adds that movie to the end of the array.  (i.e. addMovie('Titanic')) adds Titanic to the end of the array.
 
 ```js
-// your answer here
-```
+
+Function addMovie(newMovie){
+return favoriteMovies.push(newMovie)
+}
+console.log(addMovie('Titanic'))
 
 
 # Part 2: Project Progress: HTML and CSS!
